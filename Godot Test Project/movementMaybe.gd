@@ -3,6 +3,7 @@ extends KinematicBody2D
 export (int) var speed = 500
 
 var velocity = Vector2()
+var playerPosition = get_position()
 
 func get_input():
 	velocity = Vector2()
