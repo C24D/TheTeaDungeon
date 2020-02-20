@@ -1,23 +1,10 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://movementMaybe.gd" type="Script" id=1]
 [ext_resource path="res://1 Века Veka.png" type="Texture" id=2]
-[ext_resource path="res://lava.png" type="Texture" id=3]
-[ext_resource path="res://background.png" type="Texture" id=4]
 [ext_resource path="res://BasicTiles1.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-
-[sub_resource type="RectangleShape2D" id=2]
-
-[sub_resource type="RectangleShape2D" id=3]
-
-[sub_resource type="RectangleShape2D" id=4]
-
-[sub_resource type="RectangleShape2D" id=5]
-
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 11.8017, 10 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -280,60 +267,6 @@ texture = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 scale = Vector2( 60, 90 )
 shape = SubResource( 1 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-scale = Vector2( 1, 700 )
-shape = SubResource( 2 )
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2( 1030, 2.93634 )
-scale = Vector2( 1, 500 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-shape = SubResource( 3 )
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="."]
-scale = Vector2( 1100, 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2( 0.0026694, 2.93633 )
-shape = SubResource( 4 )
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="."]
-position = Vector2( 0, 600 )
-scale = Vector2( 1100, 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
-shape = SubResource( 5 )
-
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 506.195, 302.182 )
-scale = Vector2( 1.58374, 1.10033 )
-texture = ExtResource( 4 )
-
-[node name="StaticBody2D5" type="StaticBody2D" parent="."]
-position = Vector2( 185, 520 )
-scale = Vector2( 0.1, 0.3 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
-scale = Vector2( 29, 29 )
-shape = SubResource( 6 )
-
-[node name="Sprite" type="Sprite" parent="StaticBody2D5"]
-texture = ExtResource( 3 )
-
-[node name="StaticBody2D6" type="StaticBody2D" parent="."]
-position = Vector2( 185, 85 )
-scale = Vector2( 0.1, 0.3 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
-scale = Vector2( 29, 29 )
-shape = SubResource( 6 )
-
-[node name="Sprite" type="Sprite" parent="StaticBody2D6"]
-texture = ExtResource( 3 )
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
